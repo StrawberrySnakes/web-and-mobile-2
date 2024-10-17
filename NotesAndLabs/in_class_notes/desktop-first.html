@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* General css rules(true wether mobile or deasktop) */
+        .topnav {
+            color: rgb(52, 21, 82);
+            display: flex;
+            justify-content: space-around;
+        }
+        /* Desktop styles first beacuse desktop first approach */
+        h1 {
+            color: rgb(157, 188, 95);
+        }
+
+        /* Tablet Rules */
+        @media only screen and (max-width: 1000px){
+
+            h1 {
+                color: rgb(8, 8, 69);
+            }
+        }
+
+        /* Phone size */
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                color:rgb(241, 157, 0);
+            }
+            .topnav {
+                display: block;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="topnav">
+        <!-- divs are defult block -->
+        <div>Link 1</div>
+        <div>Link2</div>
+        <div>Link 3</div>
+    </nav>
+    <h1>Hello World</h1>
+    
+    <footer>
+        &copy; Dessa Shapiro
+    </footer>
+</body>
+</html>

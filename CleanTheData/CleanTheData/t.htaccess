@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic
+#Put the path to your htpasswd file. This will be different, put in your username instead of jxtadm
+AuthUserFile /home/MAIN/djs9826/.htpasswd
+require valid-user

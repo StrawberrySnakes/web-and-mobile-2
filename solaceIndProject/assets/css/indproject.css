@@ -1,0 +1,1309 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
+    font-family: system-ui, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+footer { 
+    text-align: right;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 38px; 
+    right: 20px; 
+    z-index: 101;
+    outline: none; 
+    background-color: #0c3d17;
+    cursor: pointer;
+    padding: 15px; 
+    border-radius: 50px; 
+    width: 70px;
+    height: 70px;
+  }
+
+.path {
+    position: relative;
+    top: 70px;
+    left: 10px;
+}
+
+  
+#topBtn:hover {
+background-color: black; /* Add a dark-grey background on hover */
+}
+
+
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* All topnav styles */
+.topnav {
+    color: #e7ffed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #98c8a4;
+    height: 16vh;
+    margin: 0;
+    padding: 0;
+    /* padding: 0 20px; */
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); */
+  }
+
+#refImg, #gradingImg {
+    height: 10vh;
+}
+
+/* main icon */
+.main_icon {
+    height: 14vh;
+    margin-right: 6em;
+    padding-left: 1vw;
+    /* margin: 0; */
+    border: none;
+}
+
+.hamicon {
+    display: none;  
+}
+  
+.main_icon img {
+    width: 100%;    
+    height: 100%;
+}
+
+/* Links */
+.links {
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1; /* Allow links to fill available space */
+    height: 100%;
+}
+  
+.links a , .dropdown{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.3em;
+    height: 100%;
+    width: 100%;
+    padding: 0; /* Remove padding */
+    display: flex; /* Add this line */
+    align-items: center; /* Add this line */
+    justify-content: center; /* Add this line */
+}
+
+.dropdown{
+    font-size: 1em;
+}
+  
+/* Hover effect */
+.links a:hover {
+    background-color: #dcffe5;
+    height: inherit;
+    color: #041c09;
+    /* width: 100%; Maintain consistent hover width */
+}
+  
+/* Active link */
+.links a.active {
+    background-color: #98c8a4;
+    width: 100%; /* Maintain consistent active link width */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dcffe5;
+    min-width: 160px;
+    width: inherit;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #dcffe5;
+    width: 10vw;
+    background-color: #98c8a4;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+  
+
+.mainimgtag {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 65vh;
+}
+
+.mainimg {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+.mainname{
+  position: absolute;
+  /* left: 3vw; */
+  padding: 2vh 0;
+  text-align: center;
+  top: 36vh;
+  font-size: 32pt;
+  /* padding-left:1.5%; */
+  /* border-left: solid #FFFFFF 5px; */
+  color: #FFFFFF;
+  letter-spacing: 1pt;
+  background-color: rgba(9, 9, 9, 0.5);
+  width: 100%;
+}
+
+/* homepage */
+#homepagecontent iframe {
+    width: 80%;
+    min-height: 600px;
+}
+
+figure {
+    margin: 0;
+    padding:0;
+}
+
+.townMain {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    opacity: 0.3;
+}
+
+#homepagecontent {
+    margin: 0;
+    padding: 0;
+}
+
+#homepagecontent h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#homepagecontent p {
+  margin: 0 5%;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 3%;
+  /* border-top: #041C09 solid 5px; */
+}
+
+/* #homepagecontent:nth-child(n+3) {
+  margin: 3%;
+} */
+
+#homemap {
+    padding-top: 3%;
+    text-align: center;
+}
+
+/* slideshow on homepage */
+
+#homeslide h2 {
+    background-color: #98c8a4;
+    padding: 3% 0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#slideshow {
+    padding-top: 3%;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 55vw;
+    height: 70vh;
+    overflow: hidden; /* Hide any overflow content */
+}
+
+#slideshow img {
+    text-align: center;
+    width: 100%; /* Allow images to maintain their original width */
+    height: 100%; /* Fill the height of the container */
+    object-fit: cover; /* Crop the image while maintaining aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+#imageLink:hover {
+    background-color: #000000a8;
+    color: #000000a8;
+    transition: 1s;
+
+}
+
+
+#slideshow:hover img {
+    filter: brightness(40%); /* Reduce brightness to 50% */
+    transition: 0.5s;
+}
+
+.overlay {
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    margin: auto auto;
+    bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 100;
+
+}
+
+/* Outdoors page */
+
+#bikegragh, #hikegragh {
+    width: 100%;
+    /* align-self: right; */
+}
+
+#hikegragh {
+    height: 95%;
+}
+
+.goto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    /* justify-content: space-evenly; */
+    /* gap: 5%; */
+    margin-bottom: 0.5%;
+}
+
+.goto h2 {
+    font-size: 24pt;
+    grid-column: 1/3;
+    margin: 0 auto;
+    margin-top: 2%;
+    background-color: #ffada6;
+    padding: 1% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.goto p {
+    max-width: 35vw;
+    font-size: 14pt;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 20px;
+    /* align-content: left; */
+    padding: 3%;
+    margin-top: 10%;
+}
+
+.goto div {
+    margin: 0 auto;
+}
+
+.gotobtn {
+    font-weight: bold;
+    text-decoration: none;
+    height: 8vh;
+    width: 16vw;
+    min-width: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 1s;
+    font-size: 11pt;
+    background-color: #ffada6;
+    border-color: #E14C3E;
+    border-width: 3px; 
+}
+
+.gotobtn:hover{
+    background-color: #E14C3E;
+}
+
+#parks {
+    margin: 0;
+    padding: 0;
+    border-top: #E14C3E solid 3px;
+}
+
+#parks > h2 {
+    display: block;
+    font-size: 36pt;
+    width:50vw;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 25vh;
+    z-index: 2;
+}
+
+#parks > figure img {
+    /* max-width: 50vw; */
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    opacity: 0.4;
+    padding-bottom: 5%;
+    z-index: 1;
+}
+
+.s-parks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+    padding-bottom: 3%;
+}
+
+.s-parks img {
+    width: 80%;
+    border-radius: 2em;
+}
+
+.s-parks figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.s-parks div {
+
+    padding-top: 5%;
+    width: 80%;
+    margin: auto auto;
+    text-align: center;
+}
+
+/* food page */
+.foodintro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5% 0;
+}
+
+.foodintro figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.foodintro div {
+    width: 80%;
+    font-size: 14pt;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.foodintro img {
+    width: 80%;
+}
+
+
+#foodgoto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+#foodgoto div{
+    margin: 0 auto;
+    width: 40vw;
+    
+}
+
+.foodgo {
+    min-width: 300px;
+    width: 40vw;
+    height: 50vh;
+    font-size: 24pt;
+    font-weight: bold;
+    margin: auto auto;
+    border-radius: 2.5em;
+    opacity: 0.4;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#foodgoto p {
+    position: relative;
+    top: -50%;
+    font-size: 24pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.foodgo:hover {
+    opacity: 1;
+}
+
+#foodgotobtn1 {
+    background-image: url("../images/indProject/foodbreakfast.jpg");
+    /* width: 100%; */
+}
+
+#foodgotobtn2 {
+    background-image: url("../images/indProject/fooddinner.jpeg");
+    background-size: 100%;
+}
+
+/* Stores page */
+
+.stores-cat {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-evenly;
+}
+
+.stores-cat > h2 {
+    font-size: 24pt;
+    grid-column: 1/3;
+    margin: 2% 0;
+    background-color: #ffada6;
+    padding: 1% 0;
+    width: 100%;
+    text-align: center;
+}
+
+.stores-cat img {
+    width: 80%;
+}
+
+.stores-cat figure {
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.stores-cat div {
+    text-align: center;
+    margin: auto auto;
+
+    width: 80%;
+}
+
+.stores-cat img {
+    border-radius: 2em;
+}
+
+/* Events page */
+
+#eventsmain {
+    margin: 0;
+    padding: 0;
+}
+
+#eventsmain > h2 {
+    display: block;
+    font-size: 30pt;
+    width:50vw;
+    margin: 0 auto;
+    position: relative;
+    top: 25vh;
+    z-index: 2;
+}
+
+#eventsmain > figure img {
+    max-width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    opacity: 0.5;
+    padding-bottom: 5%;
+    z-index: 1;
+}
+
+#eventsmain figure {
+    text-align: center;
+}
+
+#fair img, #festival img {
+    width: 89vw;
+    max-height: 95vh;
+    border-radius: 1em;
+}
+
+#festival {
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+#halloween, #farmers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    padding-bottom: 3%;
+}
+
+#halloween img, #farmers img {
+    width: 80%;
+    border-radius: 2em;
+}
+
+.events div {
+    /* padding-top: 5%; */
+    width: 80%;
+    margin: auto auto;
+    text-align: center;
+}
+
+#fair h2, #festival h2 {
+    font-size: 24pt;
+}
+
+/* breakfast page and dinner*/
+
+/* #breakfast figure, #dinner figure{
+    text-align: center;
+} */
+
+.bandl > div img, .dnd > div img{
+    width: 35%;
+    height: 50vh;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.4;
+    padding: 3% 0;
+    z-index: 1;
+}
+
+#breakfast > div h2, #lunch > div h2, #dinner > div h2,  #drinks > div h2 {
+    font-size: 36pt;
+    opacity: 1;
+    text-align: center;
+    position: relative;
+    top: -5em;
+    z-index: 2;
+}
+
+.bandl section, .dnd section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+
+}
+
+.bandl section img, .dnd section img {
+    border-radius: 2em;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.bandl section figure, .dnd section figure{
+    margin: 0 auto;
+    width: 50%;
+    
+}
+
+.bandl section div, .dnd section div {
+    
+    margin: auto auto;
+    width: 80%;
+    text-align: center;
+}
+
+/* hiking page and biking */
+
+.biking img, .hikes img {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s, transform 1s;
+}
+
+.biking img.show, .hikes img.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+#hikingpagecontent > div, #bikingpagecontent > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    padding-top: 4%;
+}
+
+#hikingpagecontent > div h2, #bikingpagecontent > div h2 {
+    font-size: 2.5rem;
+    margin-top: 6%;
+}
+
+.hikingicon, .bikingicon {
+    width: 30vw;
+}
+
+
+.hikes > h2, .biking > h2 {
+    font-size: 24pt;
+    margin: 2% 0;
+    background-color: #ffada6;
+    padding: 1% 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+.hikes section, .biking section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    /* grid-template-columns: 33% 30% 33%; */
+    justify-content: space-evenly;
+    margin-bottom: 2.5vh;
+    padding-bottom: 2.5vh;
+    /* border: solid 3px black; */
+    border-bottom: solid 3px #E14C3E;
+}
+
+.hikes:nth-child(4), .biking:last-child {
+    border: none;
+}
+
+.hikes section div, .biking section div {
+    padding: 5% 2%;
+    /* border-bottom: solid black 2px;
+    border-top: solid black 2px; */
+
+}
+
+.hikes section div h2, .biking section div h2 {
+    text-align: center;
+}
+
+.hikes section img, .biking section img {
+    width: 100%;
+    max-height: 50vh;
+    margin: auto 0;
+}
+
+.hikes > h2, .biking > h2 {
+    padding: 2% 0;
+}
+
+.hikes section img:nth-of-type(1), .biking section img:nth-of-type(1) {
+    border-radius: 0 2em 2em 0;
+
+}
+
+.hikes section img:nth-of-type(2), .biking section img:nth-of-type(2){
+    border-radius: 2em 0 0 2em;
+
+}
+
+/* reference page */
+.reference-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #333;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+
+.reference-box a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    overflow: hidden;
+    max-width: 100%; /* You can adjust the max-width value based on your design */
+    display: inline-block; /* Ensures max-width works as expected */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    text-overflow: ellipsis; /* Adds an ellipsis (...) if the text overflows */
+}
+
+.reference-box img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.reference-box > * {
+    margin: auto 0;
+    width: 20%;
+}
+
+#refpagecontent > h2 {
+    text-align: center;
+    padding: 2% 0;
+    margin: 2% 0;
+    background-color: #ffada6;
+}
+
+/* contact */
+
+#gotoForum {
+    position: absolute;
+    top: 35vh;
+    z-index: 102;
+    right: 5vw;
+}
+
+#gotoForum button {
+    font-size: 1.2em;
+    border-radius: 2em;
+    background-color: #041c09;
+    color: #dcffe5;
+    padding: 6%;
+}
+
+.contacticons {
+    width: 25%;
+}
+#contactcontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#mainimgcontact {
+  margin-top: 3%;
+  background-color: #98c8a4;
+  display: inline-block;
+  padding-top: 6%;
+  padding-left: 1%;
+  margin-bottom: 3%;
+}
+
+#mainimgcontact h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+#mainimgcontact h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+#contactus, #beupdated {
+  display: flex;
+  flex-basis: 40%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 1em;
+  padding: 20px; /* Add padding for better appearance */
+  margin: 0 3%;
+}
+
+
+#contactus h2, #beupdated h2 {
+  text-align: center;
+}
+
+#contactus ul {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#form {
+  text-align: center;
+}
+
+#form label {
+  margin-right: 75%;
+}
+
+#beupdated input, #beupdated textarea {
+  width: 80%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  padding: 3%;
+  border-radius: 1.5em;
+  border: #fff;
+}
+
+#beupdated input[type="submit"] {
+  background-color: #041C09;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* grading page */
+
+#gradingpagecontent > h1 {
+    padding: 2%;
+    background-color: #ffada6;
+    text-align: center;
+}
+
+#gradingpagecontent section {
+    width: 80%;
+    text-align: center;
+    border: #E14C3E solid 3px;
+    border-radius: 2em;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+/* comment form */
+
+/* Form container */
+.personalInput {
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    padding: 20px;
+    background-color: #dcffe5;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Form input fields */
+.personalInput input[type="text"],
+.personalInput textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Star rating */
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 45pt;
+    color: orange;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+
+/* .stars label:hover ~ label, */
+.stars input[type="radio"]:checked ~ label {
+    color: #ccc;
+}
+
+.stars label:hover {
+    color: orange;
+}
+
+.stars p{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+/* Form submit button */
+.personalInput input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.personalInput input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.forum {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.forum h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forum .rating {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.forum .comment {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.forum .date {
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+  
+/* Media queries */
+
+/* Media queries */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 650px) {
+
+    .topnav {
+        color: #e7ffed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #98c8a4;
+        height: 20vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+      }
+    
+    .links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        background-color: #dcffe5;
+        top: 15vh;
+        left: 0;
+        padding: 20px 0;
+        margin: 30px 0;
+        list-style: none;
+        height: 300%;
+        z-index: 1; /* Ensure links appear above other content */
+    }
+    
+    .links.active {
+        display: flex;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .links a {
+        color: #000;
+        text-decoration: none;
+        font-size: 1.3em;
+        height: 6vh;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .links a:hover {
+        background-color: #98c8a4;
+        height: 5vh;
+    }
+    
+    #refImg, #gradingImg {
+        height: 95%;
+    }
+    
+    
+    .hamicon {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    }
+    .hamicon img {
+    width: 50px;
+    }
+
+
+
+    .mainimgtag {
+        width: 100%;
+    }
+
+    .mainimg {
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+    } 
+
+    #contactus {
+        margin-bottom: 3vh;
+        padding-right: 8vh;
+    }
+
+    #contactus,
+    #beupdated {
+        flex-basis: 100%;
+    }
+
+    #mainimgcontact {
+        padding-left: 3vw;
+        margin: 3vw;
+    }
+
+    #refcontent div {
+        font-size: 0.75em;
+        max-width: 90vw;
+    }
+
+    .foodintro {
+        grid-template-columns: 100%;
+    }
+
+    .foodintro figure {
+        margin: 0 auto;
+    }
+
+    .foodintro div {
+        width: 80%;
+        font-size: 14pt;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .foodintro img {
+        width: 80%;
+    }
+
+    .btn a {
+        top: 0;
+    }
+
+    .mainname{
+        position: absolute;
+        /* left: 3vw; */
+        padding: 2vh 0;
+        text-align: center;
+        top: 50vh;
+        font-size: 24pt;
+        /* padding-left:1.5%; */
+        /* border-left: solid #FFFFFF 5px; */
+        color: #FFFFFF;
+        letter-spacing: 1pt;
+        background-color: rgba(9, 9, 9, 0.5);
+        width: 100%;
+      }
+
+    #foodgoto {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #foodgoto div {
+        margin: auto auto;
+        width: 80vw;
+    }
+
+    .foodgo {
+        width: 100%;
+        height: 30vh;
+    }
+
+    #foodgoto p {
+        position: relative;
+        top: 0;
+        font-size: 1em;
+        text-align: center;
+        font-weight: bold;
+        top: -8.5em;
+    }
+
+    .goto figure {
+        grid-column: 1/3;
+    }
+
+    .goto div {
+        grid-column: 1/3;
+    }
+
+    .goto p {
+        max-width: 80vw;
+        margin-top: 0;
+    }
+
+    .goto div {
+        margin: 0 auto;
+        padding-top: 10%;
+    }
+
+    #festival h2,
+    #fair h2 {
+        width: 80vw;
+    }
+
+    #parks > h2 {
+        width: 100%;
+    }
+
+    #parks > figure {
+        width: 100%;
+        margin: auto auto;
+    }
+
+    .bandl section div, .dnd section div{
+        width: 90vw;
+    }
+
+    .bandl > div img {
+        height: 30vh;
+    }
+
+    #parks > figure img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .s-parks {
+        width: 100%;
+    }
+
+    .stores-cat {
+        grid-template-columns: 100%;
+    }
+
+    .stores-cat img {
+        width: 90%;
+        grid-column: 1/3;
+    }
+    .stores-cat figure {
+        text-align: right;
+        width: 90%;
+        grid-column: 1/3;
+    }
+
+    .stores-cat div {
+        grid-column: 1/3;
+    }
+
+    #eventsmain > figure img {
+        max-width: 90vw;
+    }
+
+    #hikegragh,
+    #bikegragh {
+        width: 100%;
+    }
+
+    #hikingpagecontent > div h2,
+    #bikingpagecontent > div h2 {
+        font-size: 1.8rem;
+        margin-top: 3%;
+    }
+
+    .hikingicon,
+    .bikingicon {
+        width: 80vw;
+    }
+
+    .hikes > h2,
+    .biking > h2 {
+        font-size: 1.5rem;
+        margin: 2% 0;
+        background-color: #ffada6;
+        padding: 1% 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hikes section,
+    .biking section {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 1vh;
+        padding-bottom: 1vh;
+        border-bottom: solid 2px #E14C3E;
+    }
+
+    .hikes section img,
+    .biking section img {
+        max-height: 30vh;
+        border-radius: 2em;
+    }
+
+    #breakfast > div h2,
+    #lunch > div h2,
+    #dinner > div h2,
+    #drinks > div h2 {
+        font-size: 2rem;
+        opacity: 1;
+        text-align: center;
+        position: relative;
+        top: 0;
+        z-index: 2;
+    }
+
+    .bandl section img,
+    .dnd section img {
+        width: 70%;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    .bandl > div img {
+        width: 100%;
+    }
+
+    .dnd > div img {
+        width: 80%;
+    }
+
+    #refpagecontent > h2 {
+        font-size: 1.5rem;
+        padding: 1% 0;
+        margin: 2% 0;
+        background-color: #ffada6;
+    }
+    .reference-box > * {
+        flex-basis: 100%;
+    }
+
+    #gotoForum {
+        position: absolute;
+        top: 60vh;
+        z-index: 102;
+        right: 50vw;
+    }
+    
+    #gotoForum button {
+        font-size: 1em;
+        padding: 3%;
+    }
+}
+

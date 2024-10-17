@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <!-- async(could interupt rendering) or defer(won't inturupt page rendering) -- can use either-->
+    <script src="script.js" defer></script>
+</head>
+
+<!-- this allows the the javascript have acess to the code  -->
+<!-- You can put javascript in the onload but its not the best way... -->
+<!-- instead use a function -->
+<!-- onload="init()" -->
+<body onload="init()">
+  <h1>Our lovely 240 Webpage</h1> 
+    <p id="instructions">Here is some text that describes our form</p>
+
+    <script>
+        function validate() {
+            firstnameElement = document.getElementById("firstname");
+            lastnameElement = document.getElementById("lastname");
+            addressnameElement = document.getElementById("address");
+
+            // you can use value to get what the user has inputed
+            // console.log(firstnameElement.value);
+            var message = "";
+
+            if (firstnameElement.value == "") {
+                message += "firstname";
+            } else if(lastnameElement == "") {
+                message += "lastname";
+            }  else if(addressnameElement == "") {
+                message += "address";
+            } 
+
+            if (message != "") {
+                alert(message);
+                return false;
+            } else {
+                return true;
+            }
+            
+            
+            
+        }
+    </script>
+
+    <!-- you basically have to return twice it wont work if you simply add validate() -->
+    <form action="submit_form_endpoint" method="get" onsubmit="return validate()">
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="source">How did you hear about us?</label><br>
+        <select id="source" name="source">
+            <option value="tv_ad">TV Ad</option>
+            <option value="radio_ad">Radio Ad</option>
+            <option value="billboard">Billboard</option>
+            <option value="word_of_mouth">Word of Mouth</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

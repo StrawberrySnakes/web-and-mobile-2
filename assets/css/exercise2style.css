@@ -1,0 +1,102 @@
+/* Dessa Shapiro */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* This makes the top section with a consistant height  */
+#topnav {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    border-bottom: solid 2px black;
+    z-index: 2;
+    position: relative;
+}
+
+
+#topnav div {
+    padding: 2vh 0;
+}
+
+/* This makes the side scrool with the page  */
+#side{
+    position: fixed;
+    background-image: url("../images/side.jpg");
+    height: 100vh;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+/* Creates the boxes */
+#boxes{
+    display: grid;
+    grid-template-columns: 180px 180px;
+    gap: 15px;
+    margin-left: 170px;
+    margin-right: 400px;
+    padding: 15px 0;
+}
+
+
+#boxes div {
+    height: 180px;
+    width: 180px;
+    border-radius: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #587a25;
+    transition: 1s;
+
+}
+
+/* Creates the box transition */
+#boxes div:hover {
+    background-color: rgb(129, 0, 129);
+    cursor: pointer;
+}
+
+
+/* star positioning */
+.star {
+    position: relative;
+    font-size: 70px;
+    text-shadow: 3px 3px #ebff38;
+    top: -70px;
+    left: 10px;
+    z-index: 1;
+    color: #92b45f;
+}
+
+/* flower positioning */
+.flower {
+    position: relative;
+    top: -165px;
+    left: 55px;
+    z-index: 2;
+    color: #d0a3d6;
+}
+
+/* adjusts for different screen sizes */
+
+@media only screen and (max-width: 600px) {
+    #boxes{
+        grid-template-columns: 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* makes the side go away */
+    #side {
+        display: none;
+    }
+
+    #boxes {
+        margin-left: 10px;
+    }
+    
+}

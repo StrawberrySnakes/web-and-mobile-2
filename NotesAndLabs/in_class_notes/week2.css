@@ -1,0 +1,36 @@
+
+img {
+    /* adding this property allows the image to be responsive*/
+    max-width: 100%;
+}
+
+#container {
+    /* this will do the same thing as the image but you have to specify */
+    max-width: 600px;
+    /* CENTERING hack */
+
+    /* pushes it the the right */
+    margin-left: auto; 
+    /* centers it */
+    margin-right: auto
+    /* you can try to use a flexbox as well but it could look stange */
+}
+
+
+
+/* mobile first = have to prioratize what goes first  */
+
+
+/* when to use grid iver flex */
+/* flex is really good with one direction - vertically or horizontally */
+/* grid is able to handle things spanning multiple rows and multiple columns and flex is not able to do this */
+
+
+/* Positioning */
+
+/* can use it to make things stick */
+
+    /* to make something locked use fixed */
+    /* to make it move untill it reaches the top use sticky */
+
+/* can use it when you want things to overlap */
